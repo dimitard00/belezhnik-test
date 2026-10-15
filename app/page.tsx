@@ -22,7 +22,7 @@ export default async function Home() {
   const notes = await prisma.note.findMany({ orderBy: { createdAt: "desc" } });
   return (
     <main>
-      <h1>Бележник</h1>
+      <h1>Бележник НОВО</h1>
       <form action={add}><input name="text" placeholder="Нова бележка" /> <button>Добави</button></form>
       <ul>{notes.map((n) => <li key={n.id}>
         {n.text}{" "}
