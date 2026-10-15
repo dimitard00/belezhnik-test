@@ -23,7 +23,7 @@ export default async function Home() {
   return (
     <main>
       <h1>Бележник НОВО</h1>
-      <form action={add}><input name="text" placeholder="Нова бележка" /> <button>Добави</button></form>
+      <form action={add}><input name="text" placeholder="Нова бележка" /> <button>Прибави</button></form>
       <ul>{notes.map((n) => <li key={n.id}>
         {n.text}{" "}
         <form action={remove} style={{ display: "inline" }}>
