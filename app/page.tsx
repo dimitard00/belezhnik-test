@@ -23,6 +23,7 @@ export default async function Home() {
   return (
     <main>
       <h1>Бележник НОВО</h1>
+      <p>Бележки: {notes.length}</p>
       <p>Твоите бележки на едно място</p>
       <form action={add}><input name="text" placeholder="Напиши бележка" /> <button>Прибави</button></form>
       <div><button type="button">Напред</button></div>
